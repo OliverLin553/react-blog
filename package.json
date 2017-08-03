@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && webpack-dev-server --config webpack.config.js --port 8080 --output-public-path=dist/ --content-base --progress --inline --hot",
+    "start": "npm run build && webpack-dev-server --config webpack.config.js --port 8080 --output-public-path=dist/ --content-base --progress --inline --open --hot",
     "build": "npm run clean && webpack --debug",
     "clean": "rm -rf ./dist"
   },
@@ -28,6 +28,9 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-css-modules": "^4.6.0",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
   }
 }

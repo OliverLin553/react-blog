@@ -1,0 +1,8 @@
+.filter-list-item {
+
+}
+
+.active {
+  background-color: #f3ecd7;
+  border-left: 3px solid #72caf2;
+}
