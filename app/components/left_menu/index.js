@@ -1,0 +1,53 @@
+import React, { Component } from "react"
+import { connect } from "react-redux"
+import { bindActionCreators } from "redux"
+import cssModules from "react-css-modules"
+import style from "./style.css"
+import Actions from "../../actions"
+
+export const getFilterListItemClass = (filterName, selectName) => {
+  const stateClass = filterName === selectName ? style.active : ""
+
+  return (`${style["filter-list-item"]} ${stateClass}`)
+}
+
+export class LeftMenu extends Component {
+  handleFilterClick(filterName) {
+    const { filter } = this.props.actions
+    filter.set(filterName)
+  }
+
+  render() {
+    const { filterName } = this.props
+    return (
+      <div>
+        <ul>
+          <li className={getFilterListItemClass(filterName, "home")}
+              onClick={() => this.handleFilterClick("home")}>
+            Home
+          </li>
+          <li className={getFilterListItemClass(filterName, "blog")}
+              onClick={() => this.handleFilterClick("blog")}>
+            Blog
+          </li>
+          <li className={getFilterListItemClass(filterName, "contact")}
+              onClick={() => this.handleFilterClick("contact")}>
+            Contact
+          </li>
+        </ul>
+      </div>
+    )
+  }
+}
+
+const mapStateToProps = state => ({
+  filterName: state.filter
+})
+
+const mapDispatchToProps = dispatch => ({
+  actions: {
+    filter: bindActionCreators(Actions.filter, dispatch)
+  }
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(cssModules(LeftMenu, style))
