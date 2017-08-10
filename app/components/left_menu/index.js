@@ -20,20 +20,21 @@ export class LeftMenu extends Component {
   render() {
     const { filterName } = this.props
     return (
-      <div>
+      <div className={style["filter-menu"]}>
         <ul>
           <li className={getFilterListItemClass(filterName, "home")}
               onClick={() => this.handleFilterClick("home")}>
-            Home
+            <span>Home</span>
           </li>
           <li className={getFilterListItemClass(filterName, "blog")}
               onClick={() => this.handleFilterClick("blog")}>
-            Blog
+            <span>Blog</span>
           </li>
           <li className={getFilterListItemClass(filterName, "contact")}
               onClick={() => this.handleFilterClick("contact")}>
-            Contact
+            <span>Contact</span>
           </li>
+          <div className={style["filter-marker"]} />
         </ul>
       </div>
     )

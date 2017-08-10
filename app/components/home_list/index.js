@@ -1,10 +1,11 @@
 import React, { Component } from "react"
+import Swiper from "./swiper";
 
 export class HomeList extends Component {
   render() {
     return (
       <div>
-        HomeList
+        <Swiper />
       </div>
     )
   }

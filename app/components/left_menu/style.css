@@ -1,8 +1,75 @@
-.filter-list-item {
+.filter-menu {
+  position: relative;
+  background-color: #f1f9fd;
+  text-align: right;
+}
 
+.filter-menu ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.filter-list-item {
+  display: inline-block;
+  line-height: 74px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter-list-item:nth-child(1).active ~ .filter-marker {
+  right: 200px;
+}
+
+.filter-list-item:nth-child(1):hover ~ .filter-marker {
+  right: 200px !important;
+}
+
+.filter-list-item:nth-child(2).active ~ .filter-marker {
+  right: 100px;
+}
+
+.filter-list-item:nth-child(2):hover ~ .filter-marker {
+  right: 100px !important;
+}
+
+.filter-list-item:nth-child(3).active ~ .filter-marker {
+  right: 0;
+}
+
+.filter-list-item:nth-child(3):hover ~ .filter-marker {
+  right: 0 !important;
+}
+
+.filter-list-item span {
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  color: #616161;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 111;
+  position: relative;
 }
 
 .active {
-  background-color: #f3ecd7;
-  border-left: 3px solid #72caf2;
+  color: #1f1f1f;
+}
+
+.filter-menu .filter-marker {
+  position: absolute;
+  right: 200px;
+  bottom: 0;
+  height: 100%;
+  background: #e1f3fc;
+  width: 100px;
+  border-bottom: 3px solid #72caf2;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
