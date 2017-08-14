@@ -1,10 +1,12 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
+import { bindActionCreators } from "redux"
 import cssModules from "react-css-modules"
 import { default as LeftMenu } from "../left_menu"
 import { default as HomeList } from "../home_list"
 import { default as BlogList } from "../blog_list"
 import { default as ContactList } from "../contact_list"
+import Actions from "../../actions"
 import style from "./style.css"
 
 export const switchSubComponent = (filterName) => {
@@ -21,12 +23,17 @@ export const switchSubComponent = (filterName) => {
 }
 
 export class App extends Component {
+  componentDidMount() {
+    const { actions } = this.props
+    actions.articleContent.fetch()
+  }
+
   render() {
-    const { filterName} = this.props
+    const { filterName } = this.props
     const mainContent = switchSubComponent(filterName)
 
     return (
-      <div className={style["container"]}>
+      <div className={style["blog-container"]}>
         <LeftMenu />
         {mainContent}
       </div>
@@ -35,7 +42,14 @@ export class App extends Component {
 }
 
 const mapStateToProps = state => ({
-  filterName: state.filter
+  filterName: state.filter,
+  articleContent: state.articleContent
 })
 
-export default connect(mapStateToProps)(cssModules(App, style))
+const mapDispatchToProps = dispatch => ({
+  actions: {
+    articleContent: bindActionCreators(Actions.articleContent, dispatch)
+  }
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(cssModules(App, style))

@@ -1,5 +1,6 @@
 const constants = {
-  FILTER: "FILTER"
+  FILTER: "FILTER",
+  ARTICLE_CONTENT: "ARTICLE_CONTENT"
 }
 
 export default constants

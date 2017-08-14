@@ -1,7 +1,9 @@
 import * as filter from "./filter"
+import * as articleContent from "./article_content"
 
 const Actions = {
-  filter
+  filter,
+  articleContent
 }
 
 export default Actions
