@@ -29,11 +29,11 @@ export class App extends Component {
   }
 
   render() {
-    const { filterName} = this.props
+    const { filterName } = this.props
     const mainContent = switchSubComponent(filterName)
 
     return (
-      <div className={style["container"]}>
+      <div className={style["blog-container"]}>
         <LeftMenu />
         {mainContent}
       </div>

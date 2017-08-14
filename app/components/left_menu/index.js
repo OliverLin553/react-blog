@@ -23,16 +23,19 @@ export class LeftMenu extends Component {
       <div className={style["filter-menu"]}>
         <div className="container">
           <ul>
-            <li className={getFilterListItemClass(filterName, "home")}
-                onClick={() => this.handleFilterClick("home")}>
+            <li
+              className={getFilterListItemClass(filterName, "home")}
+              onClick={() => this.handleFilterClick("home")}>
               <span>Home</span>
             </li>
-            <li className={getFilterListItemClass(filterName, "blog")}
-                onClick={() => this.handleFilterClick("blog")}>
+            <li
+              className={getFilterListItemClass(filterName, "blog")}
+              onClick={() => this.handleFilterClick("blog")}>
               <span>Blog</span>
             </li>
-            <li className={getFilterListItemClass(filterName, "contact")}
-                onClick={() => this.handleFilterClick("contact")}>
+            <li
+              className={getFilterListItemClass(filterName, "contact")}
+              onClick={() => this.handleFilterClick("contact")}>
               <span>Contact</span>
             </li>
             <div className={style["filter-marker"]} />
