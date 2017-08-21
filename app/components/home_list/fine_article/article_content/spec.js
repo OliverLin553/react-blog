@@ -3,7 +3,7 @@ import React from "react"
 import { expect } from "chai"
 import { shallow } from "enzyme"
 
-import { ArticleContent } from './';
+import { ArticleContent } from "./"
 
 describe("<ArticleContent />", () => {
   let wrapper, container, props

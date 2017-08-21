@@ -3,7 +3,7 @@ import React from "react"
 import { expect } from "chai"
 import { shallow } from "enzyme"
 
-import { LeftMenu, getFilterListItemClass } from './';
+import { LeftMenu, getFilterListItemClass } from "./"
 
 describe("<LeftMenu />", () => {
   let wrapper, container, props

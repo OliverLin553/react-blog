@@ -1,0 +1,23 @@
+.footer-content {
+  background: #222831;
+  padding: 40px 0 30px;
+}
+
+.footer-content p {
+  color: rgba(255, 255, 255, .3);
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.footer-content p a {
+  color: rgba(255, 255, 255, .5);
+}
+
+.kratos-social-icons > a i{
+  font-size: 30px;
+}
+
+.footer-text {
+
+}

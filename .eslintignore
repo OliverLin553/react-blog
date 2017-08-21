@@ -3,4 +3,3 @@ dist
 coverage
 node_modules
 webpack.*
-**/spec.js
