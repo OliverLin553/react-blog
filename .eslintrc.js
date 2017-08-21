@@ -26,6 +26,11 @@ module.exports = {
     "react/prop-types": 0,
     "react/prefer-stateless-function": 0,
     "jsx-a11y/no-static-element-interactions": 0,
-    "no-mixed-operators": 0
+    "no-mixed-operators": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-return-assign": 0,
+    "one-var": 0,
+    "one-var-declaration-per-line": 0,
+    "new-cap": 0
   }
 }

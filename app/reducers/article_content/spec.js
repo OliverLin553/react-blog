@@ -6,7 +6,7 @@ import constants from "../../constants"
 describe("Article content reducer", () => {
   it("should set default Article content state", () => {
     const action = {
-      type: "test",
+      type: "test"
     }
 
     expect(reducer(undefined, action)).to.eql([])

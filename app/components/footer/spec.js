@@ -3,7 +3,7 @@ import React from "react"
 import { expect } from "chai"
 import { shallow } from "enzyme"
 
-import { Footer } from './';
+import { Footer } from "./"
 
 describe("<Footer />", () => {
   let wrapper, container

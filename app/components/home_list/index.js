@@ -2,8 +2,8 @@ import React, { Component } from "react"
 import { default as Swiper } from "./swiper"
 import { default as FineArticle } from "./fine_article"
 import { default as SelfIntroduction } from "./self_introduction"
+import { default as Footer } from "../footer"
 import style from "./style.css"
-import Footer from "../footer";
 
 export class HomeList extends Component {
   render() {
