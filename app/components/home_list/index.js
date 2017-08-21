@@ -3,6 +3,7 @@ import { default as Swiper } from "./swiper"
 import { default as FineArticle } from "./fine_article"
 import { default as SelfIntroduction } from "./self_introduction"
 import style from "./style.css"
+import Footer from "../footer";
 
 export class HomeList extends Component {
   render() {
@@ -13,6 +14,7 @@ export class HomeList extends Component {
           <FineArticle />
           <SelfIntroduction />
         </div>
+        <Footer />
       </div>
     )
   }
