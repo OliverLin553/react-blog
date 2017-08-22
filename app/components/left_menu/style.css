@@ -1,3 +1,7 @@
+.sticky-content {
+  width: 100% !important;
+}
+
 .filter-menu {
   position: relative;
   background-color: #f1f9fd;

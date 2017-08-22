@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
 import cssModules from "react-css-modules"
+import { StickyContainer } from "react-sticky"
+
 import { default as LeftMenu } from "../left_menu"
 import { default as HomeList } from "../home_list"
 import { default as BlogList } from "../blog_list"
@@ -34,8 +36,10 @@ export class App extends Component {
 
     return (
       <div className={style["blog-container"]}>
-        <LeftMenu />
-        {mainContent}
+        <StickyContainer>
+          <LeftMenu />
+          {mainContent}
+        </StickyContainer>
       </div>
     )
   }

@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
 import cssModules from "react-css-modules"
+import { Sticky } from "react-sticky"
+
 import style from "./style.css"
 import Actions from "../../actions"
 
@@ -19,29 +21,35 @@ export class LeftMenu extends Component {
 
   render() {
     const { filterName } = this.props
+
     return (
-      <div className={style["filter-menu"]}>
-        <div className="container">
-          <ul>
-            <li
-              className={getFilterListItemClass(filterName, "home")}
-              onClick={() => this.handleFilterClick("home")}>
-              <span>Home</span>
-            </li>
-            <li
-              className={getFilterListItemClass(filterName, "blog")}
-              onClick={() => this.handleFilterClick("blog")}>
-              <span>Blog</span>
-            </li>
-            <li
-              className={getFilterListItemClass(filterName, "contact")}
-              onClick={() => this.handleFilterClick("contact")}>
-              <span>Contact</span>
-            </li>
-            <div className={style["filter-marker"]} />
-          </ul>
+      <Sticky
+        className={`fadeInDown animated ${style["sticky-content"]}`}
+        stickyStyle={{ top: "0px", zIndex: 1000 }}
+        topOffset={500} >
+        <div className={style["filter-menu"]}>
+          <div className="container">
+            <ul>
+              <li
+                className={getFilterListItemClass(filterName, "home")}
+                onClick={() => this.handleFilterClick("home")}>
+                <span>Home</span>
+              </li>
+              <li
+                className={getFilterListItemClass(filterName, "blog")}
+                onClick={() => this.handleFilterClick("blog")}>
+                <span>Blog</span>
+              </li>
+              <li
+                className={getFilterListItemClass(filterName, "contact")}
+                onClick={() => this.handleFilterClick("contact")}>
+                <span>Contact</span>
+              </li>
+              <div className={style["filter-marker"]} />
+            </ul>
+          </div>
         </div>
-      </div>
+      </Sticky>
     )
   }
 }
