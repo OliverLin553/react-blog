@@ -6,11 +6,11 @@ import { shallow } from "enzyme"
 import { HomeList } from "./"
 
 describe("<HomeList />", () => {
-  let wrapper, container, props
+  let wrapper, container
 
   beforeEach(() => {
     wrapper = shallow(
-      <HomeList {...props} />
+      <HomeList />
     )
   })
 
@@ -23,6 +23,18 @@ describe("<HomeList />", () => {
 
     it("a <FineArticle /> component", () => {
       container = wrapper.find("Connect(FineArticle)")
+
+      expect(container.length).to.equal(1)
+    })
+
+    it("a <SelfIntroduction /> component", () => {
+      container = wrapper.find("SelfIntroduction")
+
+      expect(container.length).to.equal(1)
+    })
+
+    it("a <Footer /> component", () => {
+      container = wrapper.find("Footer")
 
       expect(container.length).to.equal(1)
     })

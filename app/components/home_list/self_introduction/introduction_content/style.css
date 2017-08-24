@@ -1,0 +1,13 @@
+@media screen and (max-width: 992px) {
+  .kratos-feature-image img {
+    max-width: 100%;
+  }
+
+  .kratos-btn-action {
+    text-align: center;
+  }
+}
+
+.kratos-btn-action a {
+  padding: 14px 70px;
+}
