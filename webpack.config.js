@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader?modules&localIdentName=[name]__[local]__[hash:base64:5',
+        loader: 'style-loader!css-loader?modules&localIdentName=[name]__[local]__[hash:base64:5]',
         include: path.join(__dirname, 'app'),
         exclude: /node_modules/
       },
