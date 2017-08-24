@@ -11,7 +11,8 @@ export const fetch = () => {
         date: "2017/3/9",
         comment: "0",
         Views: "137",
-        content: "cnpm — 淘宝镜像NPM express – http framework koa R"
+        content: "cnpm — 淘宝镜像NPM express – http framework koa R",
+        classification: "node"
       },
       {
         id: "2",
@@ -20,7 +21,8 @@ export const fetch = () => {
         date: "2017/3/9",
         comment: "0",
         views: "137",
-        content: "1.从官网下载最新版本的Node.js安装"
+        content: "1.从官网下载最新版本的Node.js安装",
+        classification: "react"
       },
       {
         id: "3",
@@ -29,7 +31,8 @@ export const fetch = () => {
         date: "2017/3/9",
         comment: "0",
         views: "137",
-        content: "WordPress图片加文字/图片水印插件：Watermark RELOADED WordPress的快速缓存插件：WP"
+        content: "WordPress图片加文字/图片水印插件：Watermark RELOADED WordPress的快速缓存插件：WP",
+        classification: "wordpress"
       },
       {
         id: "4",
@@ -38,7 +41,8 @@ export const fetch = () => {
         date: "2017/3/9",
         comment: "0",
         views: "137",
-        content: "WordPress图片加文字/图片水印插件：Watermark RELOADED WordPress的快速缓存插件：WP"
+        content: "WordPress图片加文字/图片水印插件：Watermark RELOADED WordPress的快速缓存插件：WP",
+        classification: "weChat"
       },
       {
         id: "5",
@@ -47,7 +51,8 @@ export const fetch = () => {
         date: "2017/3/9",
         comment: "0",
         views: "137",
-        content: "WordPress图片加文字/图片水印插件：Watermark RELOADED WordPress的快速缓存插件：WP"
+        content: "WordPress图片加文字/图片水印插件：Watermark RELOADED WordPress的快速缓存插件：WP",
+        classification: "test"
       },
       {
         id: "6",
@@ -56,7 +61,8 @@ export const fetch = () => {
         date: "2017/3/9",
         comment: "0",
         views: "137",
-        content: "WordPress图片加文字/图片水印插件：Watermark RELOADED WordPress的快速缓存插件：WP"
+        content: "WordPress图片加文字/图片水印插件：Watermark RELOADED WordPress的快速缓存插件：WP",
+        classification: "javasrcrit"
       }
     ]
 
