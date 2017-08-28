@@ -12,7 +12,8 @@ export const fetch = () => {
         comment: "0",
         Views: "137",
         content: "cnpm — 淘宝镜像NPM express – http framework koa R",
-        classification: "node"
+        classification: "node",
+        href: "http://blog.styxzp.com/2017/08/21/%e9%85%8d%e7%bd%ae%e8%a7%84%e8%8c%83-eslintrc-js/"
       },
       {
         id: "2",
@@ -22,7 +23,8 @@ export const fetch = () => {
         comment: "0",
         views: "137",
         content: "1.从官网下载最新版本的Node.js安装",
-        classification: "react"
+        classification: "react",
+        href: "http://blog.styxzp.com/"
       },
       {
         id: "3",
@@ -32,7 +34,8 @@ export const fetch = () => {
         comment: "0",
         views: "137",
         content: "WordPress图片加文字/图片水印插件：Watermark RELOADED WordPress的快速缓存插件：WP",
-        classification: "wordpress"
+        classification: "wordpress",
+        href: "http://blog.styxzp.com/"
       },
       {
         id: "4",
@@ -42,7 +45,8 @@ export const fetch = () => {
         comment: "0",
         views: "137",
         content: "WordPress图片加文字/图片水印插件：Watermark RELOADED WordPress的快速缓存插件：WP",
-        classification: "weChat"
+        classification: "weChat",
+        href: "http://blog.styxzp.com/"
       },
       {
         id: "5",
@@ -52,7 +56,8 @@ export const fetch = () => {
         comment: "0",
         views: "137",
         content: "WordPress图片加文字/图片水印插件：Watermark RELOADED WordPress的快速缓存插件：WP",
-        classification: "test"
+        classification: "test",
+        href: "http://blog.styxzp.com/"
       },
       {
         id: "6",
@@ -62,7 +67,8 @@ export const fetch = () => {
         comment: "0",
         views: "137",
         content: "WordPress图片加文字/图片水印插件：Watermark RELOADED WordPress的快速缓存插件：WP",
-        classification: "javasrcrit"
+        classification: "javasrcrit",
+        href: "http://blog.styxzp.com/"
       }
     ]
 

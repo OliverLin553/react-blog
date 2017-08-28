@@ -8,7 +8,7 @@ import style from "./style.css"
 export class FineArticle extends Component {
   render() {
     const { articleContent } = this.props
-    const lists = articleContent.map(bucket => (
+    const lists = articleContent.slice(0, 6).map(bucket => (
       <ArticleContent bucket={bucket} key={`bucket_todo_${bucket.id}`} />
     ))
 
