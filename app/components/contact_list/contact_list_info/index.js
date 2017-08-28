@@ -7,7 +7,7 @@ export class ContactListInfo extends Component {
     return (
       <div className="col-md-8">
         <article className="animate-box fadeInUp animated">
-          <div className={`clearfix ${style["kratos-post-inner"]} ${style["kratos-hentry"]}`}>
+          <div className={`clearfix ${style["kratos-post-inner"]} ${style["widget-recent-entries"]}`}>
             <header className="kratos-entry-header">
               <h1 className="kratos-entry-title text-center">About</h1>
             </header>

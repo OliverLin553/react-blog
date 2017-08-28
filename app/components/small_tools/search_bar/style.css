@@ -1,7 +1,7 @@
-.kratos-post-inner {
-  padding: 30px 15px 20px 15px;
-}
-
 .widget-recent-entries {
   composes: widget-recent-entries from "../../../styles/small_tools.css";
+}
+
+.widget-recent-entries input {
+  border-radius: 0;
 }
