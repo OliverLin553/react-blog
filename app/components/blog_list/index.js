@@ -3,6 +3,7 @@ import { connect } from "react-redux"
 import cssModules from "react-css-modules"
 
 import { default as BlogPost } from "./blog_post"
+import { default as RecentArticles } from "../small_tools/recent_articles"
 import { default as Footer } from "../footer"
 import style from "./style.css"
 
@@ -20,6 +21,9 @@ export class BlogList extends Component {
             <div className="row">
               <div className="col-md-8">
                 {lists}
+              </div>
+              <div className="col-md-4 hidden-xs hidden-sm">
+                <RecentArticles />
               </div>
             </div>
           </div>
