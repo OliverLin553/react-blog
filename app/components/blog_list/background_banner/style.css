@@ -1,0 +1,82 @@
+.kratos-start {
+  position: relative;
+  height: 400px;
+}
+
+.kratos-cover, .kratos-start {
+  height: 400px;
+}
+
+.kratos-start.kratos-post-header {
+  height: 100px;
+}
+
+.kratos-cover .kratos-overlay, .kratos-start .kratos-overlay {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(66, 64, 64, 0.2);
+}
+
+.kratos-overlay {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(66, 64, 64, 0.5);
+}
+
+.kratos-cover {
+  background-size: cover;
+  position: relative;
+}
+
+.kratos-cover .desc-content {
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  margin-top: -120px;
+  z-index: 2;
+  color: #fff;
+}
+
+.kratos-cover .desc-content span {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.kratos-cover .desc-content span a {
+  color: #fff;
+}
+
+.kratos-cover .desc-content h2 {
+  color: #fff;
+  text-transform: none;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .kratos-cover {
+    height: inherit;
+    padding: 3em 0;
+  }
+
+  .desc-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .desc-content h2 {
+    font-size: 30px;
+  }
+}
