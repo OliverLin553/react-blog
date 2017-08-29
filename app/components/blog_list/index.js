@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 import cssModules from "react-css-modules"
 
+import { default as BackgroundBanner } from "./background_banner"
 import { default as BlogPost } from "./blog_post"
 import { default as RecentArticles } from "../small_tools/recent_articles"
 import { default as SearchBar } from "../small_tools/search_bar"
@@ -58,6 +59,7 @@ export class BlogList extends Component {
   render() {
     return (
       <div>
+        <BackgroundBanner />
         <div className={style["blog-list-info"]}>
           <div className="container">
             <div className="row">

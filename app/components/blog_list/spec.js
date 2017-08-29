@@ -38,6 +38,12 @@ describe("<BlogList />", () => {
   })
 
   describe("should render", () => {
+    it("a <BackgroundBanner /> component", () => {
+      container = wrapper.find("BackgroundBanner")
+
+      expect(container.length).to.equal(1)
+    })
+
     it("a <MyselfInfo /> component", () => {
       container = wrapper.find("MyselfInfo")
 
