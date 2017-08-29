@@ -38,6 +38,24 @@ describe("<BlogList />", () => {
   })
 
   describe("should render", () => {
+    it("a <MyselfInfo /> component", () => {
+      container = wrapper.find("MyselfInfo")
+
+      expect(container.length).to.equal(1)
+    })
+
+    it("a <SearchBar /> component", () => {
+      container = wrapper.find("Connect(SearchBar)")
+
+      expect(container.length).to.equal(1)
+    })
+
+    it("a <RecentArticles /> component", () => {
+      container = wrapper.find("Connect(RecentArticles)")
+
+      expect(container.length).to.equal(1)
+    })
+
     it("a <Footer /> component", () => {
       container = wrapper.find("Footer")
 

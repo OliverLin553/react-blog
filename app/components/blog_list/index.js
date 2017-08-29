@@ -5,6 +5,7 @@ import cssModules from "react-css-modules"
 import { default as BlogPost } from "./blog_post"
 import { default as RecentArticles } from "../small_tools/recent_articles"
 import { default as SearchBar } from "../small_tools/search_bar"
+import { default as MyselfInfo } from "../small_tools/myself_info"
 import { default as Footer } from "../footer"
 import * as articleHelper from "../../helpers/article_content"
 import style from "./style.css"
@@ -64,8 +65,9 @@ export class BlogList extends Component {
                 {this.refineResults()}
               </div>
               <div className="col-md-4 hidden-xs hidden-sm">
-                <RecentArticles />
+                <MyselfInfo />
                 <SearchBar />
+                <RecentArticles />
               </div>
             </div>
           </div>
