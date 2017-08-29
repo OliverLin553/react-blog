@@ -2,3 +2,24 @@
   background: rgba(0, 0, 0, 0.04);
   padding: 32px 0 16px;
 }
+
+.search-msg-no-results {
+  margin-top: 7px;
+  object-fit: contain;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+  color: #888888;
+}
+
+.widget-recent-entries {
+  composes: widget-recent-entries from "../../styles/small_tools.css";
+}
+
+.uh-oh {
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  color: #93d5f4;
+}
