@@ -15,8 +15,26 @@ describe("<ContactList />", () => {
   })
 
   describe("should render", () => {
+    it("a <BackgroundBanner /> component", () => {
+      container = wrapper.find("BackgroundBanner")
+
+      expect(container.length).to.equal(1)
+    })
+
     it("a <ContactListInfo /> component", () => {
       container = wrapper.find("ContactListInfo")
+
+      expect(container.length).to.equal(1)
+    })
+
+    it("a <MyselfInfo /> component", () => {
+      container = wrapper.find("MyselfInfo")
+
+      expect(container.length).to.equal(1)
+    })
+
+    it("a <RecentArticles /> component", () => {
+      container = wrapper.find("Connect(RecentArticles)")
 
       expect(container.length).to.equal(1)
     })
